@@ -126,7 +126,7 @@ cd scripts/etri-setup/karmada
 ./install-karmada.sh
 
 # Join clusters
-./join-cluster.sh edge-cluster /etc/rancher/k3s/k3s.yaml root@10.0.0.39 ketilinux
+./join-cluster.sh edge-cluster /etc/rancher/k3s/k3s.yaml root@10.0.0.39 <password>
 
 # Check status
 ./check-status.sh
@@ -193,7 +193,7 @@ cd ..
 ./install-karmada.sh
 
 # Join member clusters
-./join-cluster.sh edge-cluster /etc/rancher/k3s/k3s.yaml root@10.0.0.39 ketilinux
+./join-cluster.sh edge-cluster /etc/rancher/k3s/k3s.yaml root@10.0.0.39 <password>
 
 # Verify installation
 ./check-status.sh
@@ -331,7 +331,7 @@ For completely offline environments:
    ```bash
    cd karmada
    ./install-karmada.sh
-   ./join-cluster.sh edge-cluster /etc/rancher/k3s/k3s.yaml root@10.0.0.39 ketilinux
+   ./join-cluster.sh edge-cluster /etc/rancher/k3s/k3s.yaml root@10.0.0.39 <password>
    ```
 
 ## Troubleshooting
